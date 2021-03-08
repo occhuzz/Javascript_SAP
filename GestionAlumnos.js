@@ -133,7 +133,6 @@ function verificarEdad()    //Verificar edad
     let dato = document.getElementById("nacimiento").value;
 
     let anio = parseInt(dato.slice(0,4));
-    console.log(anio);
 
     if((2021 - anio) > 18)
     {
@@ -163,7 +162,6 @@ function verificarCurso(okEdad) //Verificar curso correcto
 
         function recorrerCursos(e)
         {
-            console.log(e);
             if(e.nombreCurso == curso)
             {
                 if(e.edadMinima < okEdad && e.edadMaxima > okEdad)
@@ -178,12 +176,10 @@ function verificarCurso(okEdad) //Verificar curso correcto
         }
         if(ok == false)
         {
-            console.log("Edad incorrecta para el curso, " + okEdad);
             return false;
         }
         else
         {
-            console.log("Edad correcta para el curso, " + okEdad);
             return curso;
         }
     }
@@ -200,12 +196,10 @@ function verificarLegajo(okCurso,okDNITel)  //Verificar legajo
 
     if(dato === ok)
     {
-        console.log("Legajo Correcto");
         return dato;
     }
     else
     {
-        console.log("Legajo incorrecto");
         return false;
     }
 }
@@ -300,7 +294,6 @@ function asignarNotas(alumno) //Pasar las notas al array de notas
         alumno.aprobado += 30;
 
     arrayAlumnos.push(alumno);
-    console.log(arrayAlumnos);
 
     menuPrincipal();
 }
@@ -352,7 +345,6 @@ function buscar()   //Busca el input escrito para buscar en la base de alumnos s
             if(e.dni == dato)
             {
                 encontrado = true;
-                console.log("Encontrado via dni");
                 mostrarInfo(e);
             }
         }
@@ -367,7 +359,6 @@ function buscar()   //Busca el input escrito para buscar en la base de alumnos s
             if(e.nombre == dato)
             {
                 encontrado = true;
-                console.log("Encontrado via nombre");
                 mostrarInfo(e);
             }
         }
@@ -382,7 +373,6 @@ function buscar()   //Busca el input escrito para buscar en la base de alumnos s
             if(e.telefono == dato)
             {
                 encontrado = true;
-                console.log("Encontrado via telefono");
                 mostrarInfo(e);
             }
         }
@@ -397,7 +387,6 @@ function buscar()   //Busca el input escrito para buscar en la base de alumnos s
             if(e.email == dato)
             {
                 encontrado = true;
-                console.log("Encontrado via email");
                 mostrarInfo(e);
             }
         }
