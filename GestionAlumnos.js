@@ -439,14 +439,14 @@ function listarMaterias(arrayAlumnos)
 
     function listar(e)
     {
-        mostrarInfoMaterias(e);
+        //mostrarInfoMaterias(e);
     }
 }
-
+/*
 function mostrarInfoMaterias(objeto)
 {
     document.getElementById("info").innerHTML = "<h2>"+ objeto +"</h2><p>Aprobados: " + arr;    
-}
+}*/
 
 //----------------------------------------------------------------------------------------
 //SALIR
